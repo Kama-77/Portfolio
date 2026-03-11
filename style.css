@@ -1,49 +1,97 @@
-body{
+*{
 margin:0;
-font-family:Arial;
-scroll-behavior:smooth;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
-nav{
+body{
+scroll-behavior:smooth;
+color:white;
+}
+
+/* MENU */
+
+.menu{
 position:fixed;
 left:0;
 top:0;
-height:100%;
-width:200px;
-background:#111;
-color:white;
-padding:20px;
+width:220px;
+height:100vh;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+padding:30px;
 }
 
-nav ul{
+.menu h2{
+margin-bottom:30px;
+}
+
+.menu ul{
 list-style:none;
-padding:0;
 }
 
-nav li{
-margin:20px 0;
+.menu li{
+margin:15px 0;
 }
 
-nav a{
+.menu a{
 color:white;
 text-decoration:none;
+font-size:18px;
+transition:0.3s;
 }
 
-.slide{
+.menu a:hover{
+color:#00e5ff;
+}
+
+/* SECTIONS */
+
+.section{
 min-height:100vh;
-padding-left:240px;
-padding-top:80px;
-padding-right:40px;
+padding-left:260px;
 display:flex;
-flex-direction:column;
-justify-content:center;
+align-items:center;
+}
+
+.content{
+max-width:800px;
 }
 
 h1{
-font-size:50px;
+font-size:60px;
+margin-bottom:20px;
 }
 
-.photo{
-width:300px;
-border-radius:10px;
+p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+/* BACKGROUNDS */
+
+.accueil{
+background:linear-gradient(135deg,#1a2a6c,#b21f1f,#fdbb2d);
+}
+
+.presentation{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+.parcours{
+background:linear-gradient(135deg,#42275a,#734b6d);
+}
+
+.projets{
+background:linear-gradient(135deg,#134e5e,#71b280);
+}
+
+.competences{
+background:linear-gradient(135deg,#4568dc,#b06ab3);
+}
+
+.contact{
+background:linear-gradient(135deg,#232526,#414345);
 }
